@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Place Search</string>
+    <string name="tab_text_1">Search</string>
+    <string name="tab_text_2">Favourites</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="keyword_hint">Enter Keyword</string>
+    <string name="keyword_label">Keyword</string>
+    <string name="category_label">Category</string>
+    <string name="distance_label">Distance (in miles)</string>
+    <string name="distance_hint">Enter distance (default 10 miles)</string>
+    <string name="from_label">From</string>
+    <string name="current_location_label">Current Location</string>
+    <string name="other_location_label">Other, Specify Location</string>
+    <string name="other_location_hint">Type in the Location</string>
+    <string name="search_button">Search</string>
+    <string name="clear_button">Clear</string>
+    <string name="textedit_error">Please enter mandatory field</string>
+    <string name="no_results">No results</string>
+    <string name="no_favourites">No favourites</string>
+    <string name="address">Address</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="price_level">Price Level</string>
+    <string name="rating">Rating</string>
+    <string name="google_page">Google Page</string>
+    <string name="website">Website</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

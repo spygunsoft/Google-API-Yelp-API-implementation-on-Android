@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:id="@+id/main">
+
+    <ImageView
+        android:id="@+id/imageViewReviewPhoto"
+        android:layout_width="61dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:color/transparent" />
+
+    <ImageView
+        android:id="@+id/imageViewFavourites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewPlaceName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/heart_outline_black" />
+
+    <TextView
+        android:id="@+id/textViewPlaceName"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:maxLines="2"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/imageViewReviewPhoto"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPlaceAddress"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="TextView"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintStart_toEndOf="@+id/imageViewReviewPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPlaceName" />
+</android.support.constraint.ConstraintLayout>

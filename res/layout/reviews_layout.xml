@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:id="@+id/main">
+
+    <ImageView
+        android:id="@+id/imageViewReviewPhoto"
+        android:layout_width="61dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:color/transparent" />
+
+    <TextView
+        android:id="@+id/textViewReviewName"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:maxLines="2"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/imageViewReviewPhoto"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewReview"
+        android:layout_width="240dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintStart_toEndOf="@+id/imageViewReviewPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDate" />
+
+    <RatingBar
+        android:id="@+id/ratingBarReview"
+        android:layout_width="243dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:scaleX=".5"
+        android:scaleY=".5"
+        android:theme="@style/RatingBar"
+        android:transformPivotX="0dp"
+        android:transformPivotY="0dp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewReviewPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/textViewReviewName" />
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/imageViewReviewPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBarReview" />
+</android.support.constraint.ConstraintLayout>
